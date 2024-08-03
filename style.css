@@ -2,6 +2,8 @@ body{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    background: url('background2.JPEG') no-repeat center center fixed; 
+    background-size: cover;
 }
 
 .topbar{
@@ -19,10 +21,19 @@ body{
     top:0vh;
     width: auto;
 }
+.logo1{
+    animation: slowRotate 10s linear infinite;
+}
 .background{
     position: absolute;
     width: 100vw;
     height: 100vh;
+}
+.background2{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top:100vh;
 }
 .nikeBanner{
     position:relative;
@@ -36,10 +47,38 @@ body{
 }
 .shoe1{
     min-width: 27%;
-    height: auto;
+    height: 100%;
     position: relative;
-    animation: slowRotate 10s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
+}
+.shoe1 h1{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-bottom: 10%;
+}
+.shoe1 button{
+    font-size: 25px;
+    width: 45%;
+    height: 7%;
+    gap: 10%;
+    border-radius: 50px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.logos{
+    animation: slowRotate 10s linear infinite;
 }
 @keyframes slowRotate {
     0% {
@@ -55,6 +94,22 @@ body{
         transform: rotate(0deg);
     }
 }
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 .banner1{
     position:absolute;
     height: 100vh;
@@ -64,6 +119,7 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 .pallot{
     width: 25%;
     height: 5%;
@@ -107,8 +163,7 @@ body{
     flex-direction: row;
     gap:50vw;
     transition: left 1s ease-in-out;
-    left:36vw;
-    /*36vw -39vw -118vw */
+    left:36.5vw;
 
 }
 .banner2{
@@ -118,26 +173,82 @@ body{
     top:100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap:10%;
+    justify-content: space-between;
+    transition: opacity 0.5s ease-out;
 }
-.requirements{
-    width: 80vw;
-    height: 80vh;
+.banner3{
     position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+.applyform{
+    background-color: rgba(255, 255, 255, 0.04);
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 20%;
+    width: 50vw;
+    height: 80vh;
+    margin-right: 10%;
     display: flex;
     flex-direction: column;
-
+    align-items: flex-start;
+    justify-content: center;
+}
+.applyform label{
+color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-left: 10%;
+}
+.applyform p{
+    margin-left: 10%;
+    color: white;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 50px;
+}
+.applyform button{
+    width: 35%;
+    height: 10%;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    z-index: 9;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.requirements{
+    margin-left: 5%;
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 .requirements h1{
-    font-size: 55px;
+color: white;
+    font-size: 40px;
     text-align: center;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 .requirements p{
-    font-size: 30px;
-    text-align: center;
+color: white;
+    font-size: 20px;
+    line-height: 40px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
