@@ -7,7 +7,23 @@ const pallo1 = document.getElementById('pallo1');
 const pallo2 = document.getElementById('pallo2');
 const banner2 = document.getElementById("banner2");
 const banner3 = document.getElementById("banner3");
+const button = document.getElementById('scrollButton');
+const button2 = document.getElementById('scrollButton2');
 
+button.addEventListener('click', () => {
+    // Scroll the page by 100vw to the right
+    window.scrollBy({
+        top: window.innerHeight, // Scroll down by the viewport height
+        behavior: 'smooth' // Optional: for smooth scrolling
+    });
+  });
+button2.addEventListener('click', () => {
+    // Scroll the page by 100vw to the right
+    window.scrollBy({
+        top: window.innerHeight, // Scroll down by the viewport height
+        behavior: 'smooth' // Optional: for smooth scrolling
+    });
+  });
 function onWindowLoad() {
     setBannerPage();
 }
