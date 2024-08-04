@@ -177,6 +177,29 @@ body{
     justify-content: space-between;
     transition: opacity 0.5s ease-out;
 }
+.banner4{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top:200vh;
+    display: flex;
+    align-items: center;
+    gap:10%;
+    justify-content: space-between;
+    transition: opacity 0.5s ease-out;
+}
+.banner5{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top:170vh;
+    display: flex;
+    align-items: center;
+    gap:10%;
+    opacity: 0;
+    justify-content: space-between;
+    transition: opacity 0.5s ease-out;
+}
 .banner3{
     position: absolute;
     width: 100vw;
@@ -245,8 +268,32 @@ color: white;
     font-weight: 700;
     font-style: normal;
 }
+.topbar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 10vh;
+}
+.image-container{
+    position: absolute;
+    margin-top: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 10vw;
+    height: 35vh;
+    margin-left: -10%;
+}
+.mostwantedbutton{
+    z-index: 99;
+    
+    position: absolute;
+}
+    
 .requirements p{
-color: white;
+    color: white;
     font-size: 20px;
     line-height: 40px;
     font-family: "Poppins", sans-serif;
