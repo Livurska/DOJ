@@ -196,11 +196,11 @@
         position: absolute;
         width: 100vw;
         height: 100vh;
-        top:170vh;
+        opacity: 0;
+        top:250vh;
         display: flex;
         align-items: center;
-        gap:10%;
-        opacity: 0;
+        flex-direction: column;
         justify-content: space-between;
         transition: opacity 0.5s ease-out;
     }
@@ -211,10 +211,48 @@
         top:100vh;
         display: flex;
         align-items: center;
-        justify-content: center;
-        opacity: 0;
+        flex-direction: column;
+        justify-content: space-between;
         transition: opacity 0.5s ease-out;
+        opacity: 0;
     }
+    .mostwanted{
+        width: 90vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .mostwanted h1{
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .mostwanted p{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-align: left;
+     }
+     .wanted-photos{
+        width: 100vw;
+        height: 200%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+     }
+     .wanted-photos img{
+        width: 100%;
+        height: auto;
+     }
     .applyform{
         width: 95vw;
         height: 85vh;

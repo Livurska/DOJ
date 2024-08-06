@@ -167,6 +167,46 @@ body{
     left:36.5vw;
 
 }
+.mostwanted{
+    width: 90vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.mostwanted h1{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.mostwanted p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+ }
+ .wanted-photos{
+    width: 80vw;
+    height: 200vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
+    margin:0;
+    flex-wrap: wrap;
+ }
+ .wanted-photos img{
+    width: 40vw;
+    height: auto;
+ }
 .banner2{
     position: absolute;
     width: 100vw;
@@ -193,12 +233,12 @@ body{
     position: absolute;
     width: 100vw;
     height: 100vh;
-    top:170vh;
+    top:250vh;
     display: flex;
     align-items: center;
-    gap:10%;
+    justify-content: center;
     opacity: 0;
-    justify-content: space-between;
+    flex-direction: column;
     transition: opacity 0.5s ease-out;
 }
 .banner3{
