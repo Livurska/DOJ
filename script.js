@@ -12,18 +12,21 @@ const banner5 = document.getElementById("banner5");
 const button = document.getElementById('scrollButton');
 const button2 = document.getElementById('scrollButton2');
 
+
 button.addEventListener('click', () => {
-    // Scroll the page by 100vw to the right
-    window.scrollBy({
-        top: window.innerHeight, // Scroll down by the viewport height
-        behavior: 'smooth' // Optional: for smooth scrolling
+    document.getElementById('banner2').scrollIntoView({
+        behavior: 'smooth', // For smooth scrolling
+        block: 'start'      // Align the top of the element with the top of the scrollable area
     });
-  });
+});
+
+// Adding touchstart event for mobile devices
+
 button2.addEventListener('click', () => {
     // Scroll the page by 100vw to the right
-    window.scrollBy({
-        top: window.innerHeight, // Scroll down by the viewport height
-        behavior: 'smooth' // Optional: for smooth scrolling
+    document.getElementById('banner2').scrollIntoView({
+        behavior: 'smooth', // For smooth scrolling
+        block: 'start'      // Align the top of the element with the top of the scrollable area
     });
   });
 function onWindowLoad() {

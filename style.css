@@ -3,8 +3,6 @@ body{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    background: url('background2.JPEG') no-repeat center center fixed; 
-    background-size: cover;
 }
 
 .topbar{
@@ -33,8 +31,14 @@ body{
 .background2{
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     top:100vh;
+}
+.background3{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top:300vh;
 }
 .nikeBanner{
     position:relative;
@@ -229,15 +233,53 @@ body{
     justify-content: space-between;
     transition: opacity 0.5s ease-out;
 }
+.aboutus{
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.aboutus h1{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.aboutus p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+ }
 .banner5{
+    position: absolute;
+    width: 90vw;
+    height: 100vh;
+    margin:5%;
+    top:200vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    opacity: 0;
+    flex-direction: column;
+    transition: opacity 0.5s ease-out;
+}
+.banner6{
     position: absolute;
     width: 100vw;
     height: 100vh;
-    top:250vh;
+    top:300vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
+    opacity: 1;
     flex-direction: column;
     transition: opacity 0.5s ease-out;
 }
