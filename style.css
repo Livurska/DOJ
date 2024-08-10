@@ -6,12 +6,27 @@ body{
 }
 
 .topbar{
-
     width: 100vw;
-    height: 20vh;
+    height: 8vh;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    gap: 2%;
+    position:fixed;
+    z-index: 999;
+}
+.topbar button{
+    width: 6%;
+    height: 45%;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
 }
 .logo{
     height: 70%;
@@ -350,14 +365,6 @@ color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
-}
-.topbar{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100vw;
-    height: 10vh;
 }
 .image-container{
     position: absolute;
